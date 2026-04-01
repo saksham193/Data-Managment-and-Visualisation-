@@ -1,2 +1,5 @@
 import numpy as np
-arr = np.array([1,2,np.nan])
+arr = np.array([1,2,np.nan,4])
+arr[np.isnan(arr)] =np.nanmean(arr)
+print(arr)
+
